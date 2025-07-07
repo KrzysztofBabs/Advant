@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunSpec - Szczegóły</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleSunSpec.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="strona.html" class="logo">
+        <img src="logo.png" alt="Logo" class="logo-img">
+      Advant
+    </a>
+    <div class="menu">
+      <a href="strona.html">STRONA GŁÓWNA</a>
+      <a href="#">O SUNSPEC</a>
+      <a href="#">IRIESD</a>
+      <a href="#">PV LINK</a>
+      <a href="#">BLOG</a>
+      <a href="#">KONTAKT</a>
+    </div>
+  </nav>
+
+  <hr style="border: none; height: 2px; background-color: black; margin: 0;">
+  <main class="SunSpec-details-page">
+    <section class="SunSpec-naglowki">
+
+        <h1>Specyfikacja SunSpec definiuje protokół komunikacji
+            <br>
+            wysokiego poziomu, który realizuje określone funkcje
+            <br>
+            sterowania falownikami a także magazynami energii.</h1>
+        <h2>
+            Masowe instalowanie źródeł odnawialnych w sieci niskiego napięcia powoduje powstawanie
+            <br>
+            zjawisk, które mogą prowadzić do zakłóceń jakości dostaw energii elektrycznej do odbiorców.
+        </h2>    
+
+         <p>
+            Do najczęściej występujących problemów związanych ze znacznym udziałem źródeł fotowoltaicznych w sieci nn należą m.in:
+         </p>
+
+         <p>
+            1. Przekroczenia dopuszczalnych poziomów napięć fazowych podczas generowania mocy czynnej.
+         </p>
+
+         <p>
+            2. Wyłączanie, a następnie włączanie się falowników w mikroinstalacjach PV w sposób spontaniczny i niekontrolowany, co powoduje okresowe wzrosty
+            i spadki napięcia.
+         </p>
+
+         <p>
+            3. Niesymetria napięć i znaczna wartość prądu w przewodzie neutralnym.
+         </p>
+
+         <p>
+            Środkami zaradczymi może być m.in.  zwiększenie przekroju przewodów poprzez ich wymianę, 
+            zastosowanie transformatora SN/nn z podobciążeniowym przełącznikiem zaczepów (OLTC)
+             i automatyką jego działania na podstawie pomiarów
+              w głębi sieci lub też aktywne oddziaływanie na falowniki w mikroinstalacjach. 
+              Ten ostatni sposób wymaga zapewnienia skutecznych możliwości realizacji zarówno od strony prawnej, jak i technicznej.
+         </p>
+
+         <p>
+            W niniejszym artykule przedstawiono uwarunkowania prawne i techniczne zmierzające do zapewnienia skutecznego zarządzania mikroinstalacjami PV,
+            a tym samym minimalizacji ich niekorzystnego wpływu na jakość dostaw energii elektrycznej. W zakresie rozwiązań technicznych opisano komunikację
+            z tymi źródłami w sposób zgodny ze specyfikacją SunSpec
+         </p>
+        
+
+
+    </section>
+
+    <section>
+        <img src="SunSpec.jpg">
+    </section>
+
+    <section class="SunSpec-Specyfikacje">
+        <h1>Specyfikacja SunSpec</h1>
+        <p>Specyfikacja SunSpec definiuje protokół komunikacji wysokiego poziomu, 
+            który realizuje określone funkcje sterowania falownikami, a także magazynami energii.
+        </p>
+
+        <p>
+            Aby dane funkcje mogły być wykonane, konieczne jest odwzorowanie tego protokołu na protokół niższego poziomu,
+             specyficzny dla danego falownika. Najczęściej jest nim przemysłowy protokół komunikacyjny Modbus.
+        </p>
+
+        <p>
+            <strong>Specyfikacja Modbus</strong> nie określa, które dane znajdują się pod konkretnymi rejestrami. 
+            Obszary danych muszą być zdefiniowane dla konkretnego urządzenia w profilach Modbus.  
+            Dzięki znajomości takiego profilu Modbus, specyficznego dla danego urządzenia, klient Modbus (ang. Modbus slave) – czyli np. system sterujący – może uzyskać dostęp do danych udostępnianych przez dany falownik pełniący rolę serwera (ang. Modbus master). Organizacja modelu danych falownika, czyli rejestrów zawierających określone dane, jest w gestii producenta. Rysunek 2 przedstawia odwzorowanie niewielkiego fragmentu danych wymaganych specyfikacją SunSpec na rejestry Modbus przykładowego falownika – 
+            zgodnie z dokumentacją opublikowaną przez producenta.
+
+        </p>
+        <p>
+            <strong>SunSpec Alliance</strong> publikuje – oprócz samej specyfikacji protokołu SunSpec – 
+            zestaw przypadków testowych umożliwiających sprawdzenie zgodności danego falownika
+             ze standardem w zadanym zakresie. Procedurę testową badającą zgodność 
+             danego falownika ze specyfikacją SunSpec można przeprowadzić za pomocą oprogramowania 
+             SunSpec Validation Platform lub innych wyspecjalizowanych narzędzi.
+
+        </p>
+
+        <p class="sunspec-gray-paragraph">Na rynku dostępnych jest kilkadziesiąt modeli falowników PV z certyfikatem zgodności ze specyfikacją SunSpec. Zgodność ze specyfikacją SunSpec jest deklarowana przez producenta w dokumencie PICS (Protocol Implementation Conformance Statement). PICS określa szczegóły konkretnej implementacji i służy do weryfikacji zgodności ze specyfikacją SunSpec poprzez odpowiednie przeprowadzenie procedury testowej.</p>
+
+
+    </section>
+  </main>
+
+  
+
+
+<section class="sunspec-commands">
+  <h2 class="sunspec-commands-title">Do najczęściej implementowanych w falownikach komendach SunSpec należą:</h2>
+  <div class="sunspec-commands-list">
+    <div class="sunspec-command">
+      <div class="sunspec-command-icon">✔️</div>
+      <div class="sunspec-command-title">INV1</div>
+      <div class="sunspec-command-desc">Całkowite wyłączenie/włączenie generacji mocy czynnej</div>
+    </div>
+    <div class="sunspec-command">
+      <div class="sunspec-command-icon">✔️</div>
+      <div class="sunspec-command-title">INV3</div>
+      <div class="sunspec-command-desc">Sterowanie generacją mocy biernej</div>
+    </div>
+  </div>
+</section>
+<footer class="custom-footer">
+  <div class="footer-hero">
+    <h2>Tworzymy rozwiązania, które działają</h2>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" width="120" height="80" style="display:block; margin:0 auto;" />
+    </div>
+  </div>
+  <div class="footer-bottom">
+    
+    <div class="footer-links">
+      <a href="#">Strona główna</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html> 

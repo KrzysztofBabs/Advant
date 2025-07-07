@@ -1,0 +1,243 @@
+.navbar {
+    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 320px;
+  padding: 0 40px;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  gap: 10px;
+}
+.logo-img{
+    width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+}
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #4a90e2 60%, #f5f5f5 100%);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.menu a:hover {
+  color: #4a90e2;
+}
+  .SunSpec-details-page{
+    background: rgb(236, 233, 233);
+    
+  }
+
+  .SunSpec-naglowki h1 {
+    font-size: 2vw;
+    font-weight: 800;
+    margin: 0px auto 50px auto;
+    line-height: 1.15;
+    max-width: 1200px;
+    word-break: break-word;
+    text-align: center;
+    display: block;
+  }
+
+  .SunSpec-naglowki h2 {
+    width: 60%;
+    margin:30px auto;
+    text-align: left;
+  }
+
+
+  p{
+    width: 60%;
+    margin:30px auto;
+    text-align: left;
+  }
+
+  
+
+  img{
+    display: block;
+    margin: 0 auto;      
+    max-width: 500px;    /*wielkosc*/
+    width: 100%;         
+    height: auto;  
+  }
+
+  .SunSpec-Specyfikacje h1{
+    width: 60%;
+    margin:30px auto;
+    text-align: left;
+
+  }
+  .SunSpec-Specyfikacje {
+    margin-bottom: 50px; /* możesz ustawić dowolną wartość odstępu */
+  }
+
+  .sunspec-commands {
+    margin-top: 50px;
+  }
+
+  .sunspec-commands {
+  padding: 48px 0 32px 0;
+  background: #fff;
+}
+.sunspec-commands-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+.sunspec-commands-list {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  flex-wrap: wrap;
+}
+.sunspec-command {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+  max-width: 340px;
+}
+.sunspec-command-icon {
+  width: 70px;
+  height: 70px;
+  background: #ffb62d;
+  color: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+.sunspec-command-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.sunspec-command-desc {
+  font-size: 1.05rem;
+  color: #222;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .sunspec-commands-list {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.sunspec-gray-paragraph {
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.custom-footer {
+  background: #181b1e;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0 24px 0;
+}
+.footer-hero h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.footer-logo {
+  margin-bottom: 16px;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  padding: 16px 40px;
+  font-size: 1.05rem;
+  gap: 10px;
+}
+.footer-left {
+  color: #fff8c6;
+}
+.footer-links {
+  display: flex;
+  gap: 32px;
+  margin: 0 auto;
+}
+.footer-links a {
+  color: #fff8c6;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+  
+}
+.footer-links a:hover {
+  color: #4a90e2;
+}
+@media (max-width: 700px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 10px;
+  }
+  .footer-links {
+    gap: 18px;
+  }
+  .footer-hero h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
+ 
+
+ 
+
+
+
+
+
+
+    
+  

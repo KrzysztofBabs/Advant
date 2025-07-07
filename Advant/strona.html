@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advant - Sterowanie falownikami PV</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">
+        <img src="logo.png" alt="Logo" width="42" height="42" style="vertical-align:middle; margin-right:8px;">
+      Advant
+    </a>
+    <div class="menu">
+      <a href="#">STRONA GŁÓWNA</a>
+      <a href="#">O SUNSPEC</a>
+      <a href="#">IRIESD</a>
+      <a href="#">PV LINK</a>
+      <a href="#">BLOG</a>
+      <a href="#">KONTAKT</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Sterowanie falownikami<br>mikroinstalacji PV zgodnie ze<br>specyfikacją SunSpec</h1>
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>SunSpec</h3>
+      <p>Standardy komunikacji SunSpec odnoszą się<br>do wymagań operacyjnych związanych z energią słoneczną i magazynowaniem energii<br>w inteligentnej sieci.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3><b>Wymagania Instrukcji<br>Ruchu i Eksploatacji Sieci<br>Dystrybucyjnej (IRiESD)</b></h3>
+      <p>Określa uprawnienia i obowiązki podmiotów przyłączonych do sieci – odbiorców i wytwórców energii elektrycznej oraz Operatora Sieci Dystrybucyjnej, jak również przedsiębiorstw obrotu i sprzedawców.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>PV Link</h3>
+      <p>Urządzenie, które zapewnia zgodność falownika z wymaganiami Instrukcji Ruchu i Eksploatacji Sieci Dystrybucyjnej (IRiESD)</p>
+    </div>
+  </section>
+  <section class="sun-spec-section">
+    <div class="sun-spec-img">
+      <img src="SunSpec.jpg" alt="SunSpec" />
+    </div>
+    <div class="sun-spec-content">
+      <h2>Sun Spec</h2>
+      <p>Sterowanie falownikami mikroinstalacji PV zgodnie ze specyfikacją SunSpec</p>
+      <a class="sun-spec-btn" href="sun-spec.html">WIĘCEJ</a>
+      <!-- <div id="sun-spec-details" style="display:none; margin-top:32px;"></div> -->
+    </div>
+  </section>
+  <script>
+    function showSunSpecDetails() {
+      var details = document.getElementById('sun-spec-details');
+      if(details.style.display === 'none') {
+        details.style.display = 'block';
+        details.innerHTML = '<p>Tutaj pojawią się szczegóły, zdjęcia i dodatkowe informacje o SunSpec.</p>';
+      } else {
+        details.style.display = 'none';
+        details.innerHTML = '';
+      }
+    }
+  </script>
+</body>
+</html>
