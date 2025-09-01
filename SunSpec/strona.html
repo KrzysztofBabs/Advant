@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advant - Sterowanie falownikami PV</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="strona.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="strona.html" class="logo">
+      <img src="logo.png" alt="Logo" width="42" height="42" style="vertical-align: middle; margin-right: 8px;" />
+      Advant
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu" id="menu">
+      <a href="strona.html">STRONA GŁÓWNA</a>
+      <a href="SunSpec.html">O SUNSPEC</a>
+      <a href="IRiESD.html">IRIESD</a>
+      <a href="PVLink.html">PV LINK</a>
+      <a href="Blog.html">BLOG</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </div>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      const isActive = menu.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isActive);
+      document.body.classList.toggle('menu-open', isActive);
+    });
+  </script>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Sterowanie falownikami<br />
+        mikroinstalacji PV zgodnie ze<br />
+        specyfikacją SunSpec
+      </h1>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>SunSpec</h3>
+      <p>
+        Standardy komunikacji SunSpec odnoszą się<br />
+        do wymagań operacyjnych związanych z energią słoneczną i magazynowaniem energii<br />
+        w inteligentnej sieci.
+      </p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>
+        <b>Wymagania Instrukcji<br />
+          Ruchu i Eksploatacji Sieci<br />
+          Dystrybucyjnej (IRiESD)</b>
+      </h3>
+      <p>
+        Określa uprawnienia i obowiązki podmiotów przyłączonych do sieci – odbiorców i wytwórców energii elektrycznej oraz Operatora Sieci Dystrybucyjnej, jak również przedsiębiorstw obrotu i sprzedawców.
+      </p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⚡</div>
+      <h3>PV Link</h3>
+      <p>
+        Urządzenie, które zapewnia zgodność falownika z wymaganiami Instrukcji Ruchu i Eksploatacji Sieci Dystrybucyjnej (IRiESD)
+      </p>
+    </div>
+  </section>
+
+  <section class="sun-spec-section">
+    <div class="sun-spec-img">
+      <img src="SunSpec.jpg" alt="SunSpec" />
+    </div>
+    <div class="sun-spec-content">
+      <h2>Sun Spec</h2>
+      <p>Sterowanie falownikami mikroinstalacji PV zgodnie ze specyfikacją SunSpec</p>
+      <a class="sun-spec-btn" href="SunSpec.html">WIĘCEJ</a>
+    </div>
+  </section>
+
+
+  <section class="IRiESD-section">
+    <div class="IRiESD-img">
+      <img src="IRiESD.jpg" alt="IRiESD"/>
+    </div>
+    <div class="IRiESD-content">
+      <h2>
+        Wymagania Instrukcji Ruchu i Eksploatacji Sieci Dystrybucyjnej (IRiESD)</h2>
+      <p>Wymagania dla operatorów systemów dystrybucyjnych</p>
+      <a class="IRiESD-btn" href="IRiESD.html">WIĘCEJ</a>
+    </div>
+  </section>
+
+
+  <section class="PVlink-section">
+    <div class="PVlink-img">
+      <img src="PVlink.png" alt="PVlink"/>
+    </div>
+    <div class="PVlink-content">
+      <h2>PV Link</h2>
+      <p>Dzięki <strong>PV Link</strong> masz pewność, że każda Twoja instalacja zostanie odebrana bez żadnych problemów</p>
+      <a class="PVlink-btn" href="PVLink.html">WIĘCEJ</a>
+    </div>
+  </section>
+
+ 
+
+
+<footer class="custom-footer">
+  <div class="footer-hero">
+    <h2>Tworzymy rozwiązania, które działają</h2>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" width="120" height="80" style="display:block; margin:0 auto;" />
+    </div>
+  </div>
+  <div class="footer-bottom">
+    
+    <div class="footer-links">
+      <a href="strona.html">Strona główna</a>
+      <a href="Blog.html">Blog</a>
+      <a href="#">About</a>
+      <a href="Kontakt.html">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

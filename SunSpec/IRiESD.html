@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRiESD</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="IRiESD.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="strona.html" class="logo">
+      <img src="logo.png" alt="Logo" width="42" height="42" style="vertical-align: middle; margin-right: 8px;" />
+      Advant
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu" id="menu">
+      <a href="strona.html">STRONA GŁÓWNA</a>
+      <a href="SunSpec.html">O SUNSPEC</a>
+      <a href="IRiESD.html">IRIESD</a>
+      <a href="PVLink.html">PV LINK</a>
+      <a href="Blog.html">BLOG</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </div>
+
+
+    
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      const isActive = menu.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isActive);
+      document.body.classList.toggle('menu-open', isActive);
+    });
+  </script>
+
+<section class="IRiESD-legal-section">
+  <div class="IRiESD-legal-section-inner">
+    <h1>Stan prawny wymagań dla mikroinstalacji PV</h1>
+    <p><strong>Mikroinstalacje PV</strong> obecnie przyłączane do sieci powinny być zgodne z kodeksem sieciowym NC RfG (Network Codes – Request for Generators) ustanowionym rozporządzeniem UE 2016/631 z dnia 14.04.2016 roku, określającym wymogi w zakresie przyłączania jednostek wytwórczych do sieci. Od 27 kwietnia 2019 roku państwa członkowskie UE wymagają spełnienia tych wymogów (w różnych formach), chociaż część z nich nadal pracuje nad określeniem własnych, bardziej szczegółowych wymagań. Będą one oparte na normach europejskich EN 50549-1 oraz EN 50549-2, które w Polsce zostały wprowadzone jako:</p>
+    <div class="IRiESD-legal-images">
+      <div>
+        <img src="IRiESD.jpg" alt="Norma 1" width="150" />
+        <div>1.</div>
+        <div>PN-EN 50549-1:2019-02 – w dniu 22 lutego 2019 roku w odniesieniu do sieci dystrybucyjnej nn,</div>
+      </div>
+      <div>
+        <img src="IRiESD.jpg" alt="Norma 2" width="150" />
+        <div>2.</div>
+        <div>PN-EN 50549-2:2019-04 – w dniu 12 kwietnia 2019 roku w odniesieniu do sieci dystrybucyjnej SN.</div>
+      </div>
+    </div>
+    <p>Pierwsza z w/w norm zastępuje dotychczas stosowaną normę PN-EN 50438:2014. Porównanie norm PN-EN 50549-1 i PN-EN 50549-2 z wymogami NC RfG dostępne jest na stronach PTPiREE.</p>
+    <p><strong>W naszym kraju do 27 kwietnia 2021</strong> roku dopuszczalne jest zadeklarowanie zgodności z NC RfG, natomiast po tej dacie wymagana będzie zgodność z NC RfG potwierdzona certyfikatem wydanym przez autoryzowaną jednostkę certyfikującą.</p>
+    <p>Krajowi operatorzy sieci dystrybucyjnej opublikowali w 2020 roku swoje wymagania dotyczące modułów wytwarzania energii typu A (tj. o mocy od 0,8 kW do 200 kW) pt. „Zbiór wymagań dla modułów wytwarzania energii typu A, w tym mikroinstalacji”. W zakresie zarządzania tymi modułami (jednostkami wytwórczymi) konieczna jest możliwość:</p>
+    <ul>
+      <li>zaprzestania generacji mocy czynnej w ciągu pięciu sekund od przyjęcia polecenia w porcie wejściowym,</li>
+      <li>przyjęcia od OSD polecenia ograniczenia generacji mocy czynnej do sieci elektroenergetycznej oraz polecenia zaprzestania generacji mocy czynnej do sieci elektroenergetycznej – w odniesieniu do mikroinstalacji o mocy większej niż 10 kW.</li>
+    </ul>
+    <p>Spełnienie tych wymagań odbywa się najczęściej przez dostarczenie przez OSD urządzenia sterującego oraz wyposażenie instalacji PV – a dokładnie falownika – w port wejściowy RS485 umożliwiający zdalne sterowanie zgodnie z protokołem SunSpec.</p>
+  </div>
+</section>
+
+
+<footer class="custom-footer">
+  <div class="footer-hero">
+    <h2>Tworzymy rozwiązania, które działają</h2>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" width="120" height="80" style="display:block; margin:0 auto;" />
+    </div>
+  </div>
+  <div class="footer-bottom">
+    
+    <div class="footer-links">
+      <a href="strona.html">Strona główna</a>
+      <a href="Blog.html">Blog</a>
+      <a href="?">About</a>
+      <a href="Kontakt.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

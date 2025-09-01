@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Kontakt.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="strona.html" class="logo">
+      <img src="logo.png" alt="Logo" width="42" height="42" style="vertical-align: middle; margin-right: 8px;" />
+      Advant
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="menu" id="menu">
+      <a href="strona.html">STRONA GŁÓWNA</a>
+      <a href="SunSpec.html">O SUNSPEC</a>
+      <a href="IRiESD.html">IRIESD</a>
+      <a href="PVLink.html">PV LINK</a>
+      <a href="Blog.html">BLOG</a>
+      <a href="Kontakt.html">KONTAKT</a>
+    </div>
+
+
+   
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      const isActive = menu.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isActive);
+      document.body.classList.toggle('menu-open', isActive);
+    });
+  </script>
+
+<section class="contact-section">
+  <div class="contact-box">
+    <div class="contact-icon">📞</div>
+    <div class="contact-title">Telefon</div>
+    <div class="contact-info">+48 737 884 377</div>
+  </div>
+  <div class="contact-box">
+    <div class="contact-icon">✉️</div>
+    <div class="contact-title">Mail</div>
+    <div class="contact-info">info@advant.pl</div>
+  </div>
+  <div class="contact-box">
+    <div class="contact-icon">📍</div>
+    <div class="contact-title">Biuro</div>
+    <div class="contact-info">ul. Obrońców Wybrzeża 9/4 80-398 Gdańsk</div>
+  </div>
+</section>
+
+
+<footer class="custom-footer">
+  <div class="footer-hero">
+    <h2>Tworzymy rozwiązania, które działają</h2>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" width="120" height="80" style="display:block; margin:0 auto;" />
+    </div>
+  </div>
+  <div class="footer-bottom">
+    
+    <div class="footer-links">
+      <a href="strona.html">Strona główna</a>
+      <a href="Blog.html">Blog</a>
+      <a href="#">About</a>
+      <a href="Kontakt.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

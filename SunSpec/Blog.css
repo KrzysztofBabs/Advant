@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #4a90e2;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #222;
+  border-radius: 2px;
+}
+
+
+
+/* Responsive */
+
+/* Hamburger and menu for small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px; /* poniżej navbar */
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .menu a:first-child {
+    border-top: none;
+  }
+}
+
+/* Adjust hero title font size for smaller devices */
+@media (max-width: 700px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .feature {
+    max-width: 90vw;
+    margin-bottom: 24px;
+  }
+
+  .sun-spec-section {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 0;
+  }
+
+  .sun-spec-img img {
+    width: 90vw;
+    max-width: 500px;
+  }
+
+  .sun-spec-content h2 {
+    font-size: 2rem;
+  }
+}
